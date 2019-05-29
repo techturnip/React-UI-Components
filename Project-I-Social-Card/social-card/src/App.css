@@ -2,9 +2,48 @@
   Write your styles/CSS for App.js here and import into the component that you need 
   IF you'd like to attempt to use less you'll have to research how to do this with Create React App
 */
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
 .container {
-  width: 1080px;
+  width: 80%;
+  max-width: 1080px;
   margin: 0 auto;
   display: flex;
-  justify-content: center;
+  padding: 1rem;
+}
+
+/* Aside */
+.sidebar {
+  width: 15%;
+}
+
+.logo-container {
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.logo {
+  height: 100%;
+  max-height: 80px;
+  width: 100%;
+  max-width: 80px;
+  border-radius: 100%;
+}
+
+/* Main Content */
+.main {
+  width: 85%;
 }
