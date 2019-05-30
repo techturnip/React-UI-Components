@@ -184,3 +184,8 @@ html {
 .main {
   width: 85%;
 }
+
+.main a {
+  text-decoration: none;
+  color: inherit;
+}
