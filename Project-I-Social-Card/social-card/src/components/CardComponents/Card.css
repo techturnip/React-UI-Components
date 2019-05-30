@@ -1,1 +1,43 @@
 /* All styles for your Card Components live here */
+
+.card {
+  overflow: hidden;
+  width: 100%;
+  margin: 0;
+  border: solid 1px lightgray;
+  border-radius: 5px;
+}
+
+.card-banner {
+  background: #232323;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  width: 100%;
+}
+
+.banner-img {
+  display: block;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.card-content {
+  padding: 1.5rem 1rem 0.5rem;
+}
+
+.card-title {
+  margin: 0;
+  font-size: 1.2rem;
+  line-height: 0.6;
+}
+
+.card-text {
+  line-height: 1.2;
+}
+
+.card-meta {
+  margin-top: -6px;
+  color: gray;
+}
