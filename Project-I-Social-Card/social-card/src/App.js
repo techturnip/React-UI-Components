@@ -2,6 +2,7 @@ import React from 'react';
 import HeaderContainer from './components/HeaderComponents/HeaderContainer';
 import ImageThumbnail from './components/HeaderComponents/ImageThumbnail';
 import CardContainer from './components/CardComponents/CardContainer';
+import Footer from './components/FooterComponents/Footer';
 import './App.css';
 
 const App = () => {
@@ -18,6 +19,9 @@ const App = () => {
         <main>
           <CardContainer />
         </main>
+        <footer>
+          <Footer />
+        </footer>
       </section>
     </div>
   );

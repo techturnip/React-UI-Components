@@ -24,17 +24,18 @@
 }
 
 .card-content {
-  padding: 1.5rem 1rem 0.5rem;
+  padding: 1rem;
 }
 
 .card-title {
-  margin: 0;
-  font-size: 1.2rem;
-  line-height: 0.6;
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 .card-text {
-  line-height: 1.2;
+  margin-bottom: 0.8rem;
+  line-height: 1.4;
 }
 
 .card-meta {
