@@ -1,21 +1,92 @@
 import React from 'react';
+import CalculatorDisplay from './components/DisplayComponents/CalculatorDisplay';
+import ActionButton from './components/ButtonComponents/ActionButton';
+import NumberButton from './components/ButtonComponents/NumberButton';
 import './App.css';
+
+const numBtns = [
+  {
+    text: "0",
+    buttonStyle: {
+      width: "100%"
+    }
+  },
+  {
+    text: "1",
+    buttonStyle: {
+      width: "33.33%"
+    }
+  },
+  {
+    text: "2",
+    buttonStyle: {
+      width: "33.33%"
+    }
+  },
+  {
+    text: "3",
+    buttonStyle: {
+      width: "33.33%"
+    }
+  },
+  {
+    text: "4",
+    buttonStyle: {
+      width: "33.33%"
+    }
+  },
+  {
+    text: "5",
+    buttonStyle: {
+      width: "33.33%"
+    }
+  },
+  {
+    text: "6",
+    buttonStyle: {
+      width: "33.33%"
+    }
+  },
+  {
+    text: "7",
+    buttonStyle: {
+      width: "33.33%"
+    }
+  },
+  {
+    text: "8",
+    buttonStyle: {
+      width: "33.33%"
+    }
+  },
+  {
+    text: "9",
+    buttonStyle: {
+      width: "33.33%"
+    }
+  },
+  {
+    text: "clear",
+    buttonStyle: {
+      width: "100%"
+    }
+  }
+]
 
 const App = () => {
   return (
-    <div>
-      <h3>Welcome to React Calculator</h3>
-      <p>
-        We have given you a starter project. You'll want to build out your
-        components in their respective files, remove this code and replace it
-        with the proper components.
-      </p>
-      <p>
-        <strong>
-          Don't forget to `default export` your components and import them here
-          inside of this file in order to make them work.
-        </strong>
-      </p>
+    <div className="container">
+      <header className="display">
+        <CalculatorDisplay />
+      </header>
+      <aside className="sidebar">
+        <ActionButton />
+      </aside>
+      <section className="main">
+        {numBtns.map(btn => {
+          return <NumberButton numBtn={btn} />;
+        })}
+      </section>
     </div>
   );
 };
