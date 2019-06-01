@@ -1,8 +1,8 @@
 import React from 'react';
 import './Button.css';
 
-function ActionButton() {
-  return <h2>ActionButton Component</h2>
+function ActionButton(props) {
+  return <button className="action-btn">{`${props.actBtn.text}`}</button>
 }
 
 export default ActionButton;

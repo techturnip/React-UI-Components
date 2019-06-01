@@ -76,7 +76,19 @@ const numBtns = [
 
 const actBtns = [
   {
-
+    text: "÷"
+  },
+  {
+    text: "×"
+  },
+  {
+    text: "−"
+  },
+  {
+    text: "+"
+  },
+  {
+    text: "="
   }
 ]
 
@@ -87,7 +99,9 @@ const App = () => {
         <CalculatorDisplay />
       </header>
       <aside className="sidebar">
-        <ActionButton />
+        {actBtns.map(btn => {
+          return <ActionButton actBtn={btn} />;
+        })}
       </aside>
       <section className="main">
         {numBtns.map(btn => {
