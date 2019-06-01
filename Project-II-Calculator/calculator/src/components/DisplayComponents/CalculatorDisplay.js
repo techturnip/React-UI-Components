@@ -2,7 +2,11 @@ import React from 'react';
 import './Display.css';
 
 function CalculatorDisplay() {
-  return <h1>CalculatorDisplay Component</h1>
+  return (
+    <div className="display-text">
+      0
+    </div>
+  );
 }
 
 export default CalculatorDisplay;

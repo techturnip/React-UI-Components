@@ -68,8 +68,15 @@ const numBtns = [
   {
     text: "clear",
     buttonStyle: {
-      width: "100%"
+      width: "100%",
+      fontWeight: 500,
     }
+  }
+]
+
+const actBtns = [
+  {
+
   }
 ]
 
